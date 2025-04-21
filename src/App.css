@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PP Neue Montreal";
+    color: "#0f0f0f";
+    user-select: none;
+}
+
+html, body{
+    background: white;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.logo, .nav-item{
+    padding: 1em;
+    font-weight: 400;
+}
+
+h1{
+    width: 80%;
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 13vw;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blocks-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.row{
+    flex: 1;
+    width: 100%;
+    display: flex;
+
+}
+
+.block{
+    position: relative;
+    flex: 1;
+    /* background-color: #078d43; */
+    background-color: #34A853;
+    margin: -0.25px;
+}
+
+.transition-in .block{
+    transform-origin: top;
+}
+
+.transition-out .block{
+    transform-origin: bottom;
+}
